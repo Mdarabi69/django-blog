@@ -1,0 +1,10 @@
+{% extends 'shared/base.html' %}
+
+{% block cantant %}
+ 
+<form  method="post" style="margin-top: 100px; align-items: center; margin-left: 300px; margin-bottom: 100px;">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Sign Up</button>
+</form>
+{% endblock cantant %}
