@@ -3,5 +3,5 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path('signup/',views.SignUpView.as ,'signup'),
+    path('signup/',views.SignUpView.as_view() ,name='signup'),
 ]
