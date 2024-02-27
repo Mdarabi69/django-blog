@@ -69,9 +69,15 @@
                 
                 {% if user.is_authenticated %}
                     <li><a class="active" href=" {% url 'logout' %} ">Log Out</a></li>
+                    <li><a class="active" href=" {% url 'password_change' %} ">Change Password</a></li>
+                    <li><a class="active" href=" {% url 'password_reset' %} ">Reset Password</a></li>
+                    
                 {% else %}
                    <li><a class="active" href=" {% url 'login' %} ">Login</a></li>
                    <li><a class="active" href=" {% url 'signup' %} ">Sign Up</a></li>
+                  
+                   <li><a class="active" href=" {% url 'password_reset' %} ">Reset Password</a></li>
+                   
                 {% endif %}
                   
                 
